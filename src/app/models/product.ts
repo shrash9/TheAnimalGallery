@@ -4,6 +4,5 @@ export class Product {
     name: string = "";
     image_url :string = "";
     price:number= 0;
-    
-}
 
+}
