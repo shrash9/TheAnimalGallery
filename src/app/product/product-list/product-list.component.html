@@ -2,7 +2,7 @@
     <h2 >Experience the latest creations on display.</h2>
     <div fxLayout="row wrap" fxLayoutGap="40px grid">
         <div *ngFor="let product of products ">
-            <mat-card class="product-card">
+            <mat-card class="product-card" (click)="addtoCart(product)">
                 <img mat-card-image src="assets/images/{{product.image_url}}">
                 <mat-card-content>
                     <mat-card-title>{{product.name}}</mat-card-title>
